@@ -1,0 +1,150 @@
+*{
+  margin:0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anek Telugo', sans-serif;
+}
+
+.uigradient{
+  z-index: -1;
+  background: linear-gradient(-45deg, red, green, blue, yellow);
+  background-size: 100% 100%;
+  width: 500px;
+  /* transform: skewY(-10deg); */
+
+   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  animation: animate 5s ease infinite;
+
+}
+
+@keyframes animate {
+  0% {
+      background-position: 0 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0 50%;
+  }
+}
+
+
+.header{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 32px;
+  padding: 0 16px;
+}
+  
+
+.header--menu {
+  display: none;
+  
+}
+
+.header--login{
+  display: none;
+}
+
+.first-section_phone{
+  display: none;
+}
+
+/* @media screen and (min-width: 360px) */
+@media screen and (width >= 720px) {
+
+
+  .first-section_phone{
+    display: block;
+    width: 200px
+
+
+  }
+}
+
+@media (width >= 1024px) {
+
+.material-symbols-outlined{
+  display:none ;
+}
+
+
+.header--menu {
+  display: block;
+  
+}
+
+.header--login{
+  display: block;
+}
+
+}
+
+
+/* 
+
+
+h1{
+  color: black;
+  font-size: 100px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+header{
+  width: 100%;
+  height: 600px;
+  background: #5614B0;   fallback for old browsers 
+  background: -webkit-linear-gradient(to right, #DBD65C, #5614B0);   Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(to right, #DBD65C, #5614B0);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+nav > img{
+  text-align: start;
+  padding-inline-start: 200px;
+
+}
+
+nav{
+  text-align: center;
+  padding:30px 50px 0 0;
+}
+
+nav > a{
+  color: aliceblue;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.first-section {
+  display: flex;
+  
+  
+  align-items: center;
+
+}
+
+.first-section img{
+  display: flex;
+  width:70% ;
+
+  
+  
+}
+
+ .section-container{
+  display: flex;
+} 
+
+ .wave{
+  position: relative;
+  bottom: 0;
+  width: 100% ;
+}  */

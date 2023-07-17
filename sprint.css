@@ -14,6 +14,7 @@
   height: 40vh;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   animation: animate 15s linear infinite;
+  margin-top: -8px;
 }
 
 @keyframes animate {
@@ -33,7 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 0 32px;
+  margin: 8px 0 32px;
   padding: 8px 16px;
 }
 
@@ -45,7 +46,7 @@
   border-radius: 30%;
 }
 
-.header--login {
+.button-signin {
   display: none;
 }
 
@@ -53,24 +54,41 @@
   display: none;
 }
 
+.first-container{
+padding:50px 0;
+}
+
+.col-left-first{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 10px;
+}
+
+
+.title-h1 {
+  color: black;
+  font-size: 47px;
+  font-weight: bolder;
+  text-align: start;
+  line-height: 1.5;
+  
+}
 .text-header {
-  margin: 30px;
+  margin: 18px 0;
+  font-size: 20px;
   text-align: left;
   word-spacing: 5px;
   line-height: 1.5;
 }
 
-.title-h1 {
-  color: black;
-  font-size: 42px;
-  text-align: left;
-  margin: 30px;
-}
-
 .container-button {
+  margin: 18px 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
 .primary-button {
@@ -110,6 +128,13 @@
   margin: 10px;
 } 
 
+.col-right-first{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 .first-section_phone{
   display:none ;
 }
@@ -127,9 +152,6 @@
   width: 136px;
   height: 40px;
 }
-
-
-
 .credit-card {
   width: 75px;
   height: 45px;
@@ -201,8 +223,8 @@
 
   .first-section_phone{
     display: inline;
-    width: 300px;
-    height: 450px;
+    width: 250px;
+    height: 470px;
   }
 
   .partners-grid{
@@ -214,6 +236,7 @@
 }
 
 @media (min-width: 1024px) {
+
   .material-symbols-outlined {
     display: none;
   }
@@ -222,8 +245,58 @@
     display: block;
   }
 
-  .header--login {
-    display: block;
+  .header--menu a {
+    width: 50px;
+    height: 20px;
+    color: #FFFFFF;
+    font-size:16px ;
+    font-weight: 900;
+    text-decoration: none;
+    margin: 10px;
   }
+
+  .header--menu a:hover {
+    text-decoration: underline;
+
+  }
+
+  .button-signin {
+    display: block;
+    color: #FFFFFF;
+    background:rgba(250, 252, 252, 0.24); 
+    font-size: 16px;
+    font: bolder;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+  }
+  .button-signin:hover{
+    background:rgba(226, 236, 236, 0.753);
+    cursor: pointer;
+  }
+
+  .title-h1 {
+    font-size: 80px;
+    
+  }
+
+  .button-icon{
+    transition: transform 0.5s ease;
+  }
+
+  .primary-button:hover .button-icon{
+    transform: translateX(10px);
+  }
+  .secondary-button:hover .button-icon{
+    transform: translateX(10px);
+  }
+  
+  .first-section_phone{
+    display: inline;
+    width: 350px;
+    height: 550px;
+  }
+
+  
 }
 
